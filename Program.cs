@@ -14,7 +14,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        //string filePath = "products.json";
+    
         string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"products.json");
         string jsonString = File.ReadAllText(filePath);
 
