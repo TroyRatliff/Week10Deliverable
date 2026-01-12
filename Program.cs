@@ -14,7 +14,8 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        string filePath = "C:/Users/Troy3/Documents/Projects/Week10Deliverable/products.json";
+        //string filePath = "products.json";
+        string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"products.json");
         string jsonString = File.ReadAllText(filePath);
 
         List<Fruit>? fruits = JsonConvert.DeserializeObject<List<Fruit>>(jsonString);
